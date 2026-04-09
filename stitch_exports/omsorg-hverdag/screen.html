@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="no"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#3b4c2c",
+              "inverse-surface": "#303221",
+              "surface-tint": "#526442",
+              "primary": "#526442",
+              "outline-variant": "#c5c8bc",
+              "surface-container-low": "#f5f5dc",
+              "on-tertiary-fixed-variant": "#5a422a",
+              "on-primary-fixed": "#111f05",
+              "surface-container-highest": "#e4e4cc",
+              "on-secondary-fixed": "#3e0500",
+              "tertiary": "#74593f",
+              "primary-fixed": "#d5e9bf",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#eaead1",
+              "on-tertiary-container": "#503922",
+              "inverse-on-surface": "#f2f2d9",
+              "secondary-fixed-dim": "#ffb4a5",
+              "tertiary-fixed-dim": "#e3c0a0",
+              "tertiary-container": "#c4a385",
+              "primary-container": "#9caf88",
+              "secondary-container": "#fd876f",
+              "on-primary-container": "#324224",
+              "surface": "#fbfbe2",
+              "on-secondary-container": "#732010",
+              "on-surface-variant": "#44483f",
+              "on-background": "#1b1d0e",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "tertiary-fixed": "#ffdcbe",
+              "secondary-fixed": "#ffdad3",
+              "on-secondary-fixed-variant": "#802918",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#b9cda4",
+              "background": "#fbfbe2",
+              "on-tertiary-fixed": "#2a1704",
+              "inverse-primary": "#b9cda4",
+              "surface-variant": "#e4e4cc",
+              "surface-container": "#efefd7",
+              "outline": "#75786e",
+              "on-error": "#ffffff",
+              "surface-dim": "#dbdcc3",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1b1d0e",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "secondary": "#9f402d",
+              "surface-bright": "#fbfbe2"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-gradient-sage {
+        background: linear-gradient(135deg, #9caf88 0%, #526442 100%);
+      }
+      .organic-blob {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FBFBE2] dark:bg-[#1B1D0E] flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary-container">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="User profile reflecting a calm, soft-focus aesthetic with warm lighting and natural botanical elements in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9BmDRT1hG_5SSdl32QUCUsRbANVGquG-cA0raY1XpmIBBYH5806CclxLpucsc6ps_VY-6S0T13Vw6FcRyFsUkoutn60TwlwmQo5qb47jA53p0La0NktojiMdsF_QzTDLZt53h01t51vwBzM_VEJdd6y_vIR9i234C716aijZG8lSQnY_YJa-VkdCPZU7lLIaysO7w4lZ3ZO2xgd6VtSrNv1yVDd9pEhOCihSy9VrW9Z09I6RnwVpY0nMI_u7mHwlHqWuP4bmmMQPe"/>
+</div>
+<h1 class="font-headline text-[#526442] dark:text-[#9CAF88] font-bold tracking-tighter text-2xl">Stræva</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-[#526442] hover:bg-[#E4E4CC]/50 transition-colors duration-400">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Hero Section: Affirmation -->
+<section class="text-center space-y-4">
+<div class="inline-flex items-center justify-center p-4 bg-tertiary-fixed organic-blob mb-2">
+<span class="material-symbols-outlined text-tertiary scale-125" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h2 class="font-headline text-on-surface font-extrabold text-4xl tracking-tight leading-tight">Ditt bidrag til verden</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md mx-auto">
+                Hver lille handling av omsorg skaper ringer i vannet. I dag har du gjort verden litt varmere.
+            </p>
+</section>
+<!-- Bento Grid: Omsorgskategorier -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Category: Omsorg for andre -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between aspect-square md:aspect-auto">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Omsorg for andre</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Tiden du deler med de rundt deg er den mest verdifulle gaven.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-3 bg-surface rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-sm" data-icon="park">park</span>
+<span class="text-sm font-medium">Gåstavetur med svigermor</span>
+</div>
+<button class="w-full py-4 bg-gradient-sage text-white rounded-full font-headline font-bold text-sm tracking-wide shadow-lg shadow-primary/10 flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                        LOGG OMSORG
+                    </button>
+</div>
+</div>
+<!-- Category: Hus og Hjem -->
+<div class="bg-surface-container-highest p-8 rounded-xl flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary" data-icon="home_heart">home</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Hus og Hjem</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Å stelle for hjemmet er å skape en trygg base for ro.</p>
+</div>
+<div class="space-y-4">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest text-on-surface-variant/60">
+<span>Ukentlig stell</span>
+<span>65%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full w-[65%]"></div>
+</div>
+</div>
+<button class="w-full py-4 bg-tertiary text-on-tertiary rounded-full font-headline font-bold text-sm tracking-wide flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm" data-icon="brush">brush</span>
+                        VEDLIKEHOLD
+                    </button>
+</div>
+</div>
+<!-- Full Width Category: Fellesskap -->
+<div class="md:col-span-2 bg-secondary-container/10 p-8 rounded-xl flex flex-col md:flex-row items-center gap-8 border border-secondary-container/20">
+<div class="flex-1 space-y-4">
+<div class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-[10px] font-bold tracking-widest uppercase">
+                        Sammen er vi sterkere
+                    </div>
+<h3 class="font-headline text-2xl font-bold">Fellesskap</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Ditt bidrag til nabolaget og fellesskapet betyr mer enn du tror. Se hva du og dine naboer har oppnådd sammen denne uken.
+                    </p>
+<div class="flex -space-x-3 overflow-hidden pt-2">
+<img alt="Neighbor" class="inline-block h-10 w-10 rounded-full ring-4 ring-surface" data-alt="Portrait of a smiling neighbor in natural light with a soft focus garden background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu4smAsmSgZN1jEiVUB8bIW-W9LSUGnE0529sxAKDk4lilxHdSe0UTzZ7N7Sxlg-3Jwo8ZRsXXFvzPAStjVLpU88lEsAQN3H23WV9nKbTkcfd8a4DIy1ngjP5_As9EDmk07d4PXMrucIwoVE7K5JNgiQlSAg5ohus6xfUyM2Re24IIGRjPKySgJMMGalzvEPuBUf4cvGaM4bTx8YSU_WsORgUFKlJMIY4UXk5cWxmWhB5C0XJchakFepagj3Kv1la0LqAqQf-TOory"/>
+<img alt="Neighbor" class="inline-block h-10 w-10 rounded-full ring-4 ring-surface" data-alt="Portrait of a friendly man with glasses in a sunlit indoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhPq8n8WKoKg6MdK0mw1X4fOcgyzTh3bw-MrWMUcJsvNbEnVpcqsZKBrUXWBawa3eXD1MSauZic2kKrs9LtTAkh2b6uB7dYyGv6YKBU5FhXgKU1iHFI90pEIQSb-re9nm_hJdOvCOgS1DjbW8Mz4brUSx9iKXHG053pL25OcgTPwFA9tuDcGVYfidzO6478k26_sYjcrV01nMXZugqf8hXqUF0CX9Ps73hjEgOFiJlI5dluuY0_5Ngw3Lot5ptBs_CzZp_cjVL4O7u"/>
+<img alt="Neighbor" class="inline-block h-10 w-10 rounded-full ring-4 ring-surface" data-alt="Portrait of a young woman with a warm expression in soft outdoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjb7wWR7KYraBygzxcQvfwVKF6MMkhQ1AFuNZzBUhbF1WLasWBcGwZrvdjuKFEWfzi0drYAG18I8Jeb7Ta29EShPyNOmqkUaQ1YH1AzZYpr4BAWVG-1Bw9wvAi4-kr_R_0o6TSo_c6WXwKJrJZKyv65UnMS3ToQvhMhMUE-yO9VV2NRn2N6dAzmRa83Mw2I1IgokOEzk2NjKw3CdAahlPJhYqPyuPFLG8Y31RFxBjMo4YnpFJJ9ivz9aV4y9wPJgXTbKgIBx7JfNJu"/>
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-bold ring-4 ring-surface">+12</div>
+</div>
+</div>
+<div class="w-full md:w-48 aspect-square relative flex items-center justify-center">
+<div class="absolute inset-0 bg-secondary-fixed-dim/20 organic-blob animate-[pulse_4s_infinite]"></div>
+<span class="material-symbols-outlined text-secondary scale-[3]" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+</div>
+</div>
+<!-- Botanical Decorative Element -->
+<div class="flex justify-center opacity-30 py-4">
+<span class="material-symbols-outlined text-primary-container scale-[2]" data-icon="eco">eco</span>
+<span class="material-symbols-outlined text-primary-container scale-[3] -mx-4" data-icon="spa">spa</span>
+<span class="material-symbols-outlined text-primary-container scale-[2]" data-icon="herb_ology">immunology</span>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-[#F5F5DC]/60 dark:bg-[#1B1D0E]/80 backdrop-blur-xl shadow-[0_-10px_40px_rgba(82,100,66,0.06)] rounded-t-[3rem] pb-safe">
+<a class="flex flex-col items-center justify-center text-[#526442]/70 dark:text-[#F5F5DC]/50 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest font-medium">Hjem</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#526442]/70 dark:text-[#F5F5DC]/50 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="self_care">self_care</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest font-medium">Bevegelse</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#526442]/70 dark:text-[#F5F5DC]/50 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="workspace_premium">workspace_premium</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest font-medium">Seire</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#526442]/70 dark:text-[#F5F5DC]/50 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="groups">groups</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest font-medium">Fellesskap</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#9CAF88] text-[#FBFBE2] rounded-full px-4 py-2 scale-105 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] uppercase tracking-widest font-medium">Omsorg</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#fbfbe2" />
+    <meta
+      name="description"
+      content="Stræva er et åpen kildekode-konsept for en snillere treningsreise, med innebygd testversjon av appen."
+    />
+    <title>Stræva | En snillere treningsreise</title>
+    <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --background: #fbfbe2;
+        --surface: #efefd7;
+        --surface-soft: #f5f5dc;
+        --surface-strong: #e4e4cc;
+        --surface-plain: #ffffff;
+        --text: #1b1d0e;
+        --text-soft: #44483f;
+        --primary: #526442;
+        --primary-soft: #9caf88;
+        --primary-pale: #d5e9bf;
+        --secondary: #9f402d;
+        --secondary-soft: #ffdad3;
+        --secondary-warm: #ffb4a5;
+        --tertiary-soft: #ffdcbe;
+        --outline: rgba(117, 120, 110, 0.18);
+        --shadow: 0 24px 56px rgba(82, 100, 66, 0.12);
+        --shadow-soft: 0 16px 28px rgba(82, 100, 66, 0.08);
+        --radius-lg: 36px;
+        --radius-md: 28px;
+        --radius-sm: 22px;
+        --radius-pill: 999px;
+        --font-headline: "Plus Jakarta Sans", sans-serif;
+        --font-body: "Be Vietnam Pro", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: var(--font-body);
+        background:
+          radial-gradient(circle at top left, rgba(213, 233, 191, 0.8), transparent 28%),
+          radial-gradient(circle at top right, rgba(255, 220, 190, 0.55), transparent 18%),
+          linear-gradient(180deg, var(--background), color-mix(in srgb, var(--background) 84%, var(--surface) 16%));
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font: inherit;
+        cursor: pointer;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: var(--font-headline);
+        letter-spacing: -0.05em;
+      }
+
+      .page {
+        width: min(100%, 1180px);
+        margin: 0 auto;
+        padding: 18px 18px 44px;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        backdrop-filter: blur(18px);
+        background: color-mix(in srgb, var(--background) 76%, transparent);
+      }
+
+      .topbar-inner {
+        width: min(100%, 1180px);
+        margin: 0 auto;
+        padding: 16px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        border-radius: 16px;
+        background:
+          radial-gradient(circle at 35% 35%, var(--tertiary-soft), transparent 40%),
+          linear-gradient(135deg, var(--primary-soft), var(--primary));
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35);
+        position: relative;
+      }
+
+      .brand-mark::before,
+      .brand-mark::after {
+        content: "";
+        position: absolute;
+        background: rgba(255, 255, 255, 0.45);
+        border-radius: 999px;
+      }
+
+      .brand-mark::before {
+        width: 18px;
+        height: 18px;
+        left: 7px;
+        top: 5px;
+      }
+
+      .brand-mark::after {
+        width: 10px;
+        height: 22px;
+        right: 9px;
+        bottom: 6px;
+        transform: rotate(24deg);
+      }
+
+      .brand-copy strong {
+        display: block;
+        font-size: 1.2rem;
+      }
+
+      .brand-copy span {
+        display: block;
+        margin-top: 2px;
+        color: var(--text-soft);
+        font-size: 0.78rem;
+      }
+
+      .topbar-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .pill,
+      .button,
+      .ghost {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 46px;
+        padding: 0 16px;
+        border-radius: var(--radius-pill);
+      }
+
+      .pill,
+      .ghost {
+        border: 1px solid var(--outline);
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      .pill {
+        min-height: 36px;
+        font-size: 0.82rem;
+        color: var(--text-soft);
+        font-weight: 600;
+      }
+
+      .button {
+        border: 0;
+        background: linear-gradient(135deg, var(--primary-soft), var(--primary));
+        color: #fff;
+        box-shadow: 0 12px 24px rgba(82, 100, 66, 0.18);
+      }
+
+      .hero {
+        padding-top: 14px;
+      }
+
+      .hero-card {
+        background:
+          radial-gradient(circle at 18% 24%, rgba(255, 220, 190, 0.65), transparent 34%),
+          radial-gradient(circle at 90% 10%, rgba(213, 233, 191, 0.9), transparent 20%),
+          linear-gradient(160deg, color-mix(in srgb, var(--surface-soft) 88%, white 12%), color-mix(in srgb, var(--surface) 84%, var(--primary-pale) 16%));
+        border-radius: var(--radius-lg);
+        padding: 26px 22px 22px;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-card::after {
+        content: "";
+        position: absolute;
+        right: -36px;
+        top: 58px;
+        width: 170px;
+        height: 170px;
+        border-radius: 44% 56% 59% 41% / 42% 42% 58% 58%;
+        background: rgba(82, 100, 66, 0.08);
+        filter: blur(14px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: var(--radius-pill);
+        background: rgba(255, 255, 255, 0.54);
+        color: var(--secondary);
+        border: 1px solid rgba(255, 255, 255, 0.62);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .hero-card h1 {
+        margin-top: 14px;
+        font-size: clamp(2.1rem, 10vw, 4.6rem);
+        line-height: 0.95;
+        max-width: 9ch;
+      }
+
+      .hero-copy {
+        margin-top: 14px;
+        color: var(--text-soft);
+        line-height: 1.6;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .hero-actions .button,
+      .hero-actions .ghost {
+        width: 100%;
+      }
+
+      .portrait-card {
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.58);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 30px;
+        padding: 16px;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .portrait-shell {
+        aspect-ratio: 1 / 1.06;
+        border-radius: 28px;
+        background:
+          radial-gradient(circle at top center, rgba(213, 233, 191, 0.85), transparent 32%),
+          linear-gradient(180deg, color-mix(in srgb, var(--surface) 84%, white 16%), color-mix(in srgb, var(--surface-high) 78%, white 22%));
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+
+      .portrait-medallion {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 36% 30%, rgba(255, 255, 255, 0.88), transparent 18%),
+          linear-gradient(180deg, color-mix(in srgb, var(--primary-soft) 62%, white 38%), var(--primary));
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.28), 0 24px 30px rgba(82, 100, 66, 0.16);
+        display: grid;
+        place-items: center;
+      }
+
+      .portrait-medallion img {
+        width: 72px;
+        height: 72px;
+      }
+
+      .portrait-copy {
+        margin-top: 14px;
+        text-align: center;
+      }
+
+      .portrait-copy strong {
+        display: block;
+        font-size: 1rem;
+      }
+
+      .portrait-copy span {
+        display: block;
+        margin-top: 4px;
+        color: var(--text-soft);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .section {
+        padding-top: 24px;
+      }
+
+      .section h2 {
+        font-size: 1.85rem;
+        margin-bottom: 10px;
+      }
+
+      .section-intro {
+        color: var(--text-soft);
+        line-height: 1.6;
+        margin: 0 0 16px;
+      }
+
+      .vision-card,
+      .feature-card,
+      .support-card,
+      .cta-card,
+      .preview-shell {
+        border: 1px solid var(--outline);
+        border-radius: 30px;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .vision-card {
+        background: color-mix(in srgb, var(--surface) 84%, white 16%);
+        overflow: hidden;
+      }
+
+      .vision-image {
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .vision-body {
+        padding: 18px;
+      }
+
+      .vision-body p {
+        margin: 10px 0 0;
+        color: var(--text-soft);
+        line-height: 1.62;
+      }
+
+      .feature-stack {
+        display: grid;
+        gap: 12px;
+      }
+
+      .feature-card {
+        padding: 18px;
+        background: color-mix(in srgb, var(--surface) 82%, white 18%);
+      }
+
+      .feature-card h3 {
+        font-size: 1.2rem;
+        margin: 8px 0 8px;
+      }
+
+      .feature-card p {
+        margin: 0;
+        color: var(--text-soft);
+        line-height: 1.58;
+      }
+
+      .feature-chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, var(--primary-pale), color-mix(in srgb, var(--primary-soft) 62%, white 38%));
+        color: var(--primary);
+        font-weight: 800;
+      }
+
+      .feature-grid-large {
+        display: grid;
+        gap: 12px;
+      }
+
+      .feature-card--wide {
+        background: linear-gradient(165deg, color-mix(in srgb, var(--surface-soft) 84%, white 16%), color-mix(in srgb, var(--primary-pale) 26%, var(--surface) 74%));
+      }
+
+      .milestones {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .milestone {
+        padding: 14px 10px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.58);
+        text-align: center;
+      }
+
+      .milestone strong {
+        display: block;
+        font-size: 1.05rem;
+      }
+
+      .milestone span {
+        display: block;
+        margin-top: 4px;
+        color: var(--text-soft);
+        font-size: 0.8rem;
+      }
+
+      .support-card {
+        background: linear-gradient(165deg, color-mix(in srgb, var(--surface-low) 84%, white 16%), color-mix(in srgb, var(--secondary-soft) 26%, var(--surface) 74%));
+        padding: 18px;
+      }
+
+      .support-row {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-top: 14px;
+      }
+
+      .support-avatars {
+        display: flex;
+        margin-left: 4px;
+      }
+
+      .support-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        margin-left: -8px;
+        border: 2px solid var(--surface-plain);
+        background: linear-gradient(160deg, var(--secondary-soft), var(--tertiary-soft));
+        color: var(--secondary);
+        font-weight: 700;
+      }
+
+      .cta-card {
+        background:
+          radial-gradient(circle at top left, rgba(255, 220, 190, 0.58), transparent 28%),
+          linear-gradient(160deg, color-mix(in srgb, var(--surface-soft) 86%, white 14%), color-mix(in srgb, var(--surface) 84%, var(--primary-pale) 16%));
+        padding: 22px;
+        text-align: center;
+      }
+
+      .cta-card h2 {
+        font-size: 2rem;
+      }
+
+      .cta-card p {
+        margin: 10px auto 0;
+        max-width: 34ch;
+        color: var(--text-soft);
+        line-height: 1.6;
+      }
+
+      .cta-card .button {
+        margin-top: 18px;
+        min-width: 210px;
+      }
+
+      .opensource-note {
+        margin-top: 16px;
+        padding: 14px 16px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.56);
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        color: var(--text-soft);
+        line-height: 1.55;
+      }
+
+      .preview-shell {
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.44);
+      }
+
+      .preview-top {
+        padding: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+        border-bottom: 1px solid var(--outline);
+        background: rgba(255, 255, 255, 0.54);
+        flex-wrap: wrap;
+      }
+
+      .preview-meta strong {
+        display: block;
+        font-family: var(--font-headline);
+        font-size: 1.1rem;
+      }
+
+      .preview-meta span {
+        display: block;
+        margin-top: 4px;
+        color: var(--text-soft);
+        line-height: 1.5;
+      }
+
+      .preview-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .preview-body {
+        padding: 18px;
+        background:
+          radial-gradient(circle at top left, rgba(213, 233, 191, 0.35), transparent 26%),
+          radial-gradient(circle at bottom right, rgba(255, 220, 190, 0.24), transparent 18%),
+          var(--surface-soft);
+      }
+
+      .phone-shell {
+        width: min(100%, 420px);
+        margin: 0 auto;
+        border-radius: 34px;
+        padding: 14px;
+        background: #1d2118;
+        box-shadow: 0 22px 50px rgba(0, 0, 0, 0.22);
+      }
+
+      .app-frame {
+        display: block;
+        width: 100%;
+        height: 860px;
+        border: 0;
+        border-radius: 24px;
+        background: #fbfbe2;
+      }
+
+      .smallprint {
+        margin-top: 14px;
+        color: var(--text-soft);
+        font-size: 0.92rem;
+        line-height: 1.52;
+      }
+
+      @media (min-width: 900px) {
+        .hero {
+          display: grid;
+          grid-template-columns: 1.02fr 0.98fr;
+          gap: 16px;
+          align-items: center;
+        }
+
+        .feature-grid-large {
+          grid-template-columns: 1.05fr 0.95fr;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .topbar-inner,
+        .page {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .milestones {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .app-frame {
+          height: 760px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-copy">
+            <strong>Stræva</strong>
+            <span>Et åpent konsept</span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <span class="pill">Kun konsept</span>
+          <a class="ghost" href="#test-app">Bli med i fellesskapet</a>
+          <a class="ghost" href="https://github.com/Ola-Turmo/straeva-pwa" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <section class="hero-card">
+          <span class="eyebrow">Stræva</span>
+          <h1>Bevegelse på dine premisser</h1>
+          <p>
+            Glem prestasjonspress og knallharde målinger. Her feirer vi hvert skritt, hver omsorgshandling og hver lille seier i din egen hverdag.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="/app" target="_blank" rel="noreferrer">Last ned appen</a>
+            <a class="ghost" href="#test-app">Se hvordan det fungerer</a>
+          </div>
+          <div class="opensource-note">
+            Stræva er åpen kildekode og bare et konsept. Landingssiden er tilpasset den faktiske appen som ligger i repoet, og hele appen kan testes lenger ned på siden.
+          </div>
+        </section>
+
+        <section class="portrait-card">
+          <div class="portrait-shell">
+            <img
+              class="hero-image"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuqIIPYJSE9kPcUczMX1k1IWgk13S9uYL7aH3uW9xzqKGJ2-IYKxccY32YhTlRJiZu0O0IIsRdI0IjfwJT-ZPQiDxwMqXk8bJDdc1waFjQrR4GYH6xi6XwWxWp8PaEMYCsGKwJ0FTz3VMa3orPJoU5IIOUq12U14xQ_RXO8zsNAYWxCxIQsGZbx_VhbgYJGRBPSrEfUTwYtFw07WPe0wmBj-eqG1Ckr3ok6_Jqm7WJlrz2s0Q_hU-9lHh1dUM9OP6uqnLsk63K_oBn"
+              alt="Rolig bevegelse i et lyst og varmt rom"
+            />
+          </div>
+          <div class="portrait-copy">
+            <strong>Dagens omsorg</strong>
+            <span>Vannet plantene. Små varme handlinger får også en plass her.</span>
+          </div>
+        </section>
+      </section>
+
+      <section class="section">
+        <h2>Hvorfor Stræva?</h2>
+        <p class="section-intro">
+          Stræva er laget som et motsvar til harde treningsgrensesnitt. Tanken er å la bevegelse handle om pust, rytme, omsorg og små steg i stedet for fart, sammenligning og prestasjon.
+        </p>
+        <article class="vision-card">
+          <img
+            class="vision-image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxrdP_d7LgHc2oQRYvoNnEDcQiLdXUVvhpEs_xybUomtcIMy4ALPyAz8TWs73mO8dyiA_7GeeJaLqDLe9jC9VeiKskpEQJ_MWKqO_ko0cr39TvSkByLGWj5heHIyUfu79EhaPUWqnAMa2-1HvDheXNi6TZlfwhdsPAGlE4_ALzo2_V54eGRznNbLQT9xFuBldNW8cAYA-_-UGQ7fayXMbEtya6xv3epoIBNqcogxjIZgN12gk64Zfv1KEkogfcV3H4ulj08wajk78o"
+            alt="Et stille øyeblikk i naturen"
+          />
+          <div class="vision-body">
+            <strong>Vår visjon</strong>
+            <p>Vi tror at bevegelse handler om hvordan du føler deg, ikke bare hvor fort du løper. Vi fjerner stresset og gir deg plassen du trenger for å vokse i ditt eget tempo.</p>
+            <p style="margin-top: 12px;"><strong>Pust ut.</strong> Ingen offentlige rankinglister eller konstante push-varsler.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Bevegelse på en ny måte</h2>
+        <p class="section-intro">
+          Alt som gjør deg godt, fortjener en plass. Dagens prototype støtter allerede de viktigste sporene fra konseptet.
+        </p>
+        <div class="feature-grid-large">
+          <div class="feature-stack">
+            <article class="feature-card feature-card--wide">
+              <div class="feature-chip">BV</div>
+              <h3>Bevegelse for velvære</h3>
+              <p>Fokuser på tid i bevegelse og humør, ikke kalorier. Loggfør din daglige tur i skogen eller en rolig tøyøkt.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-chip">OM</div>
+              <h3>Omsorg som teller</h3>
+              <p>Loggfør husarbeid, hagearbeid eller turer med svigermor. Alt er verdifull innsats for ditt velvære.</p>
+            </article>
+          </div>
+          <article class="feature-card">
+            <div class="feature-chip">SR</div>
+            <h3>De små, store seirene</h3>
+            <p>Feir øyeblikkene som å tøyde ut i sengen, drikke et glass vann eller ta fem minutter med dyp pust midt i en travel dag.</p>
+            <div class="milestones">
+              <div class="milestone"><strong>Vann</strong><span>Drukket</span></div>
+              <div class="milestone"><strong>Strekk</strong><span>Strukket ut</span></div>
+              <div class="milestone"><strong>Pust</strong><span>Meditert</span></div>
+              <div class="milestone"><strong>Tur</strong><span>Gått tur</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <article class="support-card">
+          <h2>Du er aldri alene</h2>
+          <p class="section-intro">
+            Prototypen har også en lokal støttegruppe og en feiringsflyt. Den er ment for varm deling, ikke sosialt press eller offentlig rangering.
+          </p>
+          <div class="support-row">
+            <div class="support-avatars">
+              <div class="support-avatar">I</div>
+              <div class="support-avatar">M</div>
+              <div class="support-avatar">S</div>
+            </div>
+            <div>
+              <strong>Støttegruppe</strong>
+              <div style="color: var(--text-soft); margin-top: 4px;">Lokale navn og milepæler kan lagres og deles uten konto eller backend.</div>
+            </div>
+          </div>
+          <div class="opensource-note" style="margin-top: 18px;">
+            «Endelig en app som ikke skriker til meg hvis jeg tar en hviledag. Det føles som en klem for sjelen.»
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <article class="cta-card">
+          <h2>Klar for en snillere reise?</h2>
+          <p>
+            Dette er fortsatt bare et konsept, men appen under er ekte nok til å testes. Hvis du vil se koden eller bygge videre, ligger alt åpent på GitHub.
+          </p>
+          <a class="button" href="#test-app">Start din reise nå</a>
+          <div class="smallprint" style="margin-top: 12px;">Helt gratis å starte. Ingen binding.</div>
+        </article>
+      </section>
+
+      <section class="section" id="test-app">
+        <h2>Test hele appen direkte her</h2>
+        <p class="section-intro">
+          Under er den faktiske appen embedda for testing. Du kan også åpne den i egen fane eller gjøre hele testområdet om til fullskjerm.
+        </p>
+        <section class="preview-shell" id="app-preview">
+          <div class="preview-top">
+            <div class="preview-meta">
+              <strong>Stræva test-app</strong>
+              <span>Lokal prototype for energi, bevegelse, seire og omsorg</span>
+            </div>
+            <div class="preview-actions">
+              <button class="ghost" type="button" id="fullscreen-preview">Fullskjerm</button>
+              <a class="button" href="/app" target="_blank" rel="noreferrer">Åpne appen</a>
+            </div>
+          </div>
+          <div class="preview-body">
+            <div class="phone-shell">
+              <iframe
+                id="app-frame"
+                class="app-frame"
+                src="/app"
+                title="Innebygd Stræva-app for testing"
+                loading="eager"
+              ></iframe>
+            </div>
+            <div class="smallprint">
+              GitHub: <a href="https://github.com/Ola-Turmo/straeva-pwa" target="_blank" rel="noreferrer">Ola-Turmo/straeva-pwa</a>. Dette er en konseptprototype og ikke et ferdig produkt.
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      const preview = document.getElementById("app-preview");
+      const fullscreenButton = document.getElementById("fullscreen-preview");
+
+      fullscreenButton?.addEventListener("click", async () => {
+        if (!document.fullscreenElement) {
+          await preview.requestFullscreen?.();
+          return;
+        }
+        await document.exitFullscreen?.();
+      });
+    </script>
+  </body>
+</html>

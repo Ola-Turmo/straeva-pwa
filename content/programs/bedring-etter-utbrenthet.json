@@ -1,0 +1,482 @@
+{
+  "id": "bedring-etter-utbrenthet",
+  "slug": "bedring-etter-utbrenthet",
+  "title": {
+    "no": "Bedring etter utbrenthet",
+    "en": "Recovery after burnout"
+  },
+  "description": {
+    "no": "Ett 21-dagers program for de i bedring etter utbrenthet. Meget lav terskel.",
+    "en": "A 21-day program for burnout recovery. Very low threshold."
+  },
+  "targetAudience": {
+    "no": "Deg som er i bedring etter utbrenthet, stress eller utmattelse.",
+    "en": "For those in burnout or exhaustion recovery."
+  },
+  "duration": "21 dager",
+  "graceAllowed": true,
+  "days": [
+    {
+      "day": 1,
+      "title": {
+        "no": "Dag 1: En liten start",
+        "en": "Day 1: A small beginning"
+      },
+      "description": {
+        "no": "Dag 1 av 21. Fase 1: Omstart. Kroppen trenger ro og omsorg.",
+        "en": "Day 1 of 21. Phase 1: Restart. Your body needs rest and care."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 2,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 2,
+      "title": {
+        "no": "Dag 2: En liten start",
+        "en": "Day 2: A small beginning"
+      },
+      "description": {
+        "no": "Dag 2 av 21. Fase 1: Omstart. Kroppen trenger ro og omsorg.",
+        "en": "Day 2 of 21. Phase 1: Restart. Your body needs rest and care."
+      },
+      "suggestedSessionType": "Hvile med pust",
+      "suggestedMinutes": 2,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 3,
+      "title": {
+        "no": "Dag 3: En liten start",
+        "en": "Day 3: A small beginning"
+      },
+      "description": {
+        "no": "Dag 3 av 21. Fase 1: Omstart. Kroppen trenger ro og omsorg.",
+        "en": "Day 3 of 21. Phase 1: Restart. Your body needs rest and care."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 3,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 4,
+      "title": {
+        "no": "Dag 4: En liten start",
+        "en": "Day 4: A small beginning"
+      },
+      "description": {
+        "no": "Dag 4 av 21. Fase 1: Omstart. Kroppen trenger ro og omsorg.",
+        "en": "Day 4 of 21. Phase 1: Restart. Your body needs rest and care."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 3,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 5,
+      "title": {
+        "no": "Dag 5: En liten start",
+        "en": "Day 5: A small beginning"
+      },
+      "description": {
+        "no": "Dag 5 av 21. Fase 1: Omstart. Kroppen trenger ro og omsorg.",
+        "en": "Day 5 of 21. Phase 1: Restart. Your body needs rest and care."
+      },
+      "suggestedSessionType": "Hvile med pust",
+      "suggestedMinutes": 3,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 6,
+      "title": {
+        "no": "Dag 6: En liten start",
+        "en": "Day 6: A small beginning"
+      },
+      "description": {
+        "no": "Dag 6 av 21. Fase 1: Omstart. Kroppen trenger ro og omsorg.",
+        "en": "Day 6 of 21. Phase 1: Restart. Your body needs rest and care."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 4,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 7,
+      "title": {
+        "no": "Dag 7: En liten start",
+        "en": "Day 7: A small beginning"
+      },
+      "description": {
+        "no": "Dag 7 av 21. Fase 1: Omstart. Kroppen trenger ro og omsorg.",
+        "en": "Day 7 of 21. Phase 1: Restart. Your body needs rest and care."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 4,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 8,
+      "title": {
+        "no": "Dag 8: Sakte fremover",
+        "en": "Day 8: Slowly forward"
+      },
+      "description": {
+        "no": "Dag 8 av 21. Fase 2: Bygg. Sakte, varig fremgang.",
+        "en": "Day 8 of 21. Phase 2: Build. Slow, lasting progress."
+      },
+      "suggestedSessionType": "Hvile med pust",
+      "suggestedMinutes": 4,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 9,
+      "title": {
+        "no": "Dag 9: Sakte fremover",
+        "en": "Day 9: Slowly forward"
+      },
+      "description": {
+        "no": "Dag 9 av 21. Fase 2: Bygg. Sakte, varig fremgang.",
+        "en": "Day 9 of 21. Phase 2: Build. Slow, lasting progress."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 5,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 10,
+      "title": {
+        "no": "Dag 10: Sakte fremover",
+        "en": "Day 10: Slowly forward"
+      },
+      "description": {
+        "no": "Dag 10 av 21. Fase 2: Bygg. Sakte, varig fremgang.",
+        "en": "Day 10 of 21. Phase 2: Build. Slow, lasting progress."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 5,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 11,
+      "title": {
+        "no": "Dag 11: Sakte fremover",
+        "en": "Day 11: Slowly forward"
+      },
+      "description": {
+        "no": "Dag 11 av 21. Fase 2: Bygg. Sakte, varig fremgang.",
+        "en": "Day 11 of 21. Phase 2: Build. Slow, lasting progress."
+      },
+      "suggestedSessionType": "Hvile med pust",
+      "suggestedMinutes": 5,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 12,
+      "title": {
+        "no": "Dag 12: Sakte fremover",
+        "en": "Day 12: Slowly forward"
+      },
+      "description": {
+        "no": "Dag 12 av 21. Fase 2: Bygg. Sakte, varig fremgang.",
+        "en": "Day 12 of 21. Phase 2: Build. Slow, lasting progress."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 6,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 13,
+      "title": {
+        "no": "Dag 13: Sakte fremover",
+        "en": "Day 13: Slowly forward"
+      },
+      "description": {
+        "no": "Dag 13 av 21. Fase 2: Bygg. Sakte, varig fremgang.",
+        "en": "Day 13 of 21. Phase 2: Build. Slow, lasting progress."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 6,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 14,
+      "title": {
+        "no": "Dag 14: Sakte fremover",
+        "en": "Day 14: Slowly forward"
+      },
+      "description": {
+        "no": "Dag 14 av 21. Fase 2: Bygg. Sakte, varig fremgang.",
+        "en": "Day 14 of 21. Phase 2: Build. Slow, lasting progress."
+      },
+      "suggestedSessionType": "Hvile med pust",
+      "suggestedMinutes": 6,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 15,
+      "title": {
+        "no": "Dag 15: Bygg tillit",
+        "en": "Day 15: Build trust"
+      },
+      "description": {
+        "no": "Dag 15 av 21. Fase 3: Tillit. Du bygger noe varig.",
+        "en": "Day 15 of 21. Phase 3: Trust. You are building something lasting."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 7,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 16,
+      "title": {
+        "no": "Dag 16: Bygg tillit",
+        "en": "Day 16: Build trust"
+      },
+      "description": {
+        "no": "Dag 16 av 21. Fase 3: Tillit. Du bygger noe varig.",
+        "en": "Day 16 of 21. Phase 3: Trust. You are building something lasting."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 7,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 17,
+      "title": {
+        "no": "Dag 17: Bygg tillit",
+        "en": "Day 17: Build trust"
+      },
+      "description": {
+        "no": "Dag 17 av 21. Fase 3: Tillit. Du bygger noe varig.",
+        "en": "Day 17 of 21. Phase 3: Trust. You are building something lasting."
+      },
+      "suggestedSessionType": "Hvile med pust",
+      "suggestedMinutes": 7,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 18,
+      "title": {
+        "no": "Dag 18: Bygg tillit",
+        "en": "Day 18: Build trust"
+      },
+      "description": {
+        "no": "Dag 18 av 21. Fase 3: Tillit. Du bygger noe varig.",
+        "en": "Day 18 of 21. Phase 3: Trust. You are building something lasting."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 8,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 19,
+      "title": {
+        "no": "Dag 19: Bygg tillit",
+        "en": "Day 19: Build trust"
+      },
+      "description": {
+        "no": "Dag 19 av 21. Fase 3: Tillit. Du bygger noe varig.",
+        "en": "Day 19 of 21. Phase 3: Trust. You are building something lasting."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 8,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 20,
+      "title": {
+        "no": "Dag 20: Bygg tillit",
+        "en": "Day 20: Build trust"
+      },
+      "description": {
+        "no": "Dag 20 av 21. Fase 3: Tillit. Du bygger noe varig.",
+        "en": "Day 20 of 21. Phase 3: Trust. You are building something lasting."
+      },
+      "suggestedSessionType": "Hvile med pust",
+      "suggestedMinutes": 8,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 21,
+      "title": {
+        "no": "Dag 21: Bygg tillit",
+        "en": "Day 21: Build trust"
+      },
+      "description": {
+        "no": "Dag 21 av 21. Fase 3: Tillit. Du bygger noe varig.",
+        "en": "Day 21 of 21. Phase 3: Trust. You are building something lasting."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 9,
+      "carePrompt": {
+        "no": "Har du gitt deg selv tillatelse til a ta det rolig i dag?",
+        "en": "Have you given yourself permission to take it slow today?"
+      },
+      "reflectionQuestion": {
+        "no": "Hva var den minste gode handlingen du klarte i dag?",
+        "en": "What was the smallest good thing you managed today?"
+      },
+      "graceAllowed": true
+    }
+  ]
+}

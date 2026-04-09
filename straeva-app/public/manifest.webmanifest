@@ -1,0 +1,17 @@
+{
+  "name": "Straeva",
+  "short_name": "Straeva",
+  "description": "Roelig bevegelse og omsorg. Helt gratis.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfbe2",
+  "theme_color": "#fbfbe2",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    { "src": "/assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "categories": ["health", "lifestyle", "wellbeing"],
+  "lang": "no",
+  "dir": "ltr"
+}

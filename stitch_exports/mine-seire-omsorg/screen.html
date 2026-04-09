@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="no"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#3b4c2c",
+              "inverse-surface": "#303221",
+              "surface-tint": "#526442",
+              "primary": "#526442",
+              "outline-variant": "#c5c8bc",
+              "surface-container-low": "#f5f5dc",
+              "on-tertiary-fixed-variant": "#5a422a",
+              "on-primary-fixed": "#111f05",
+              "surface-container-highest": "#e4e4cc",
+              "on-secondary-fixed": "#3e0500",
+              "tertiary": "#74593f",
+              "primary-fixed": "#d5e9bf",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#eaead1",
+              "on-tertiary-container": "#503922",
+              "inverse-on-surface": "#f2f2d9",
+              "secondary-fixed-dim": "#ffb4a5",
+              "tertiary-fixed-dim": "#e3c0a0",
+              "tertiary-container": "#c4a385",
+              "primary-container": "#9caf88",
+              "secondary-container": "#fd876f",
+              "on-primary-container": "#324224",
+              "surface": "#fbfbe2",
+              "on-secondary-container": "#732010",
+              "on-surface-variant": "#44483f",
+              "on-background": "#1b1d0e",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "tertiary-fixed": "#ffdcbe",
+              "secondary-fixed": "#ffdad3",
+              "on-secondary-fixed-variant": "#802918",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#b9cda4",
+              "background": "#fbfbe2",
+              "on-tertiary-fixed": "#2a1704",
+              "inverse-primary": "#b9cda4",
+              "surface-variant": "#e4e4cc",
+              "surface-container": "#efefd7",
+              "outline": "#75786e",
+              "on-error": "#ffffff",
+              "surface-dim": "#dbdcc3",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1b1d0e",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "secondary": "#9f402d",
+              "surface-bright": "#fbfbe2"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bubble-shape {
+        border-radius: 60% 40% 70% 30% / 40% 50% 60% 40%;
+      }
+      .bubble-shape-alt {
+        border-radius: 40% 60% 30% 70% / 50% 40% 40% 60%;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#FBFBE2] dark:bg-[#1B1D0E] flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Soft-focus portrait of a serene woman with gentle lighting and a warm, natural aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn6_gFD37_sheAOHL0t4gvr7VgLtME6A9Av3u2CTiWA_6pTzfWyy9FLxKFSvh7MFQye-mm5piVfiymvo7-xSP_HvC5bYB9hprcmhrVrxyw1Ro0DYRHnvOhdDKIRGNBxkc5p5AvVjyl7D0QjacadYnM64lYbrUftrlaNphn6msKtqqjpiWu8L0NzFs_3H5IzrPqSTjbWvR45MuNpql9Dt3N4yku7Lwr0nwVzZVnkkrKPUkHjZf6dwQd8XlZzjWNexX4APkcrTwuKjRl"/>
+</div>
+<span class="text-[#526442] dark:text-[#9CAF88] font-bold tracking-tighter text-2xl font-headline">Stræva</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-[#526442] hover:bg-[#E4E4CC]/50 transition-colors duration-400">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Header Section -->
+<header class="mb-10 text-center">
+<h1 class="font-headline text-on-surface text-[3.5rem] font-bold leading-tight tracking-tight mb-2">12 seire i dag</h1>
+<p class="text-on-surface-variant text-lg opacity-80">Hver lille bevegelse teller for ditt velvære.</p>
+</header>
+<!-- Highlights Card -->
+<section class="mb-12">
+<div class="bg-surface-container-low rounded-xl p-8 relative overflow-hidden group">
+<div class="relative z-10">
+<span class="font-label text-xs uppercase tracking-widest text-secondary font-semibold mb-4 block">Ukens høydepunkt</span>
+<h2 class="font-headline text-2xl font-bold mb-4 max-w-[60%]">En rolig tur i skogen med familien</h2>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform">
+                        Se tilbake
+                    </button>
+</div>
+<div class="absolute -right-10 -bottom-10 w-64 h-64 opacity-90 transition-transform group-hover:scale-110 duration-700">
+<img alt="Forest" class="w-full h-full object-cover bubble-shape" data-alt="Sunlight filtering through lush green trees in a peaceful forest setting with soft morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjVs_akOr4hfda7WNNZ81mGGqeBGw7-cxt8iP0jP_znjLulq3v55nPDPp9iH0rSng8EV7dsC_8DJ5vCuPiWDmgXsPFGvddAjo-vditCv4842tOFfA_MjO82dql5ba0CwH0hfIrj3Le1RDR4dlJrZReJBD3Rwpj_GJ62PmvMdHIkxZ4vkdQtpZogdDr75I5J-ukRG6qqW-aomOQzllojFLfDUMfckLN4hiwbZbN8ic7N9RPlIcuNpqNlUuJU8GrCJuOlKeN7zXvDVKf"/>
+</div>
+</div>
+</section>
+<!-- Victory Bubbles Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Victory 1 -->
+<div class="flex flex-col items-center">
+<div class="bubble-shape bg-primary-container/20 w-full aspect-square flex flex-col items-center justify-center p-8 text-center mb-4 transition-all hover:bg-primary-container/30 group">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-4 text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="mail">mail</span>
+</div>
+<h3 class="font-headline font-semibold text-xl mb-1 text-on-surface">Gikk til postkassen</h3>
+<p class="text-sm text-on-surface-variant mb-6">En frisk pust og litt dagslys.</p>
+<button class="text-primary font-semibold text-sm flex items-center gap-2 hover:underline">
+                        Detaljer <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Victory 2 -->
+<div class="flex flex-col items-center mt-6 md:mt-12">
+<div class="bubble-shape-alt bg-secondary/10 w-full aspect-square flex flex-col items-center justify-center p-8 text-center mb-4 transition-all hover:bg-secondary/20 group">
+<div class="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="favorite">favorite</span>
+</div>
+<h3 class="font-headline font-semibold text-xl mb-1 text-on-surface">Hjalp svigermor</h3>
+<p class="text-sm text-on-surface-variant mb-6">Omsorg i bevegelse for de vi er glad i.</p>
+<button class="text-secondary font-semibold text-sm flex items-center gap-2 hover:underline">
+                        Detaljer <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Victory 3 -->
+<div class="flex flex-col items-center">
+<div class="bubble-shape-alt bg-tertiary-container/20 w-full aspect-square flex flex-col items-center justify-center p-8 text-center mb-4 transition-all hover:bg-tertiary-container/30 group">
+<div class="w-16 h-16 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="self_care">self_care</span>
+</div>
+<h3 class="font-headline font-semibold text-xl mb-1 text-on-surface">Pustepause</h3>
+<p class="text-sm text-on-surface-variant mb-6">5 minutter med fokusert pust.</p>
+<button class="text-tertiary font-semibold text-sm flex items-center gap-2 hover:underline">
+                        Detaljer <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Victory 4 -->
+<div class="flex flex-col items-center mt-6 md:-mt-6">
+<div class="bubble-shape bg-primary-container/10 w-full aspect-square flex flex-col items-center justify-center p-8 text-center mb-4 transition-all hover:bg-primary-container/20 group">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="restaurant">restaurant</span>
+</div>
+<h3 class="font-headline font-semibold text-xl mb-1 text-on-surface">Laget sunn lunsj</h3>
+<p class="text-sm text-on-surface-variant mb-6">Kjærlighet gjennom god næring.</p>
+<button class="text-primary font-semibold text-sm flex items-center gap-2 hover:underline">
+                        Detaljer <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quote/Affirmation -->
+<section class="mt-16 text-center italic text-primary/70 max-w-sm mx-auto">
+            "Små seire bygger store gleder over tid. Pust ut og nyt øyeblikket."
+        </section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#F5F5DC]/60 backdrop-blur-xl flex justify-around items-center px-4 py-3 rounded-t-[3rem] shadow-[0_-10px_40px_rgba(82,100,66,0.06)] pb-safe">
+<a class="flex flex-col items-center justify-center text-[#526442]/70 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-medium mt-1">Hjem</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#526442]/70 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="self_care">self_care</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-medium mt-1">Bevegelse</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#9CAF88] text-[#FBFBE2] rounded-full px-4 py-2 scale-105 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-medium mt-1">Seire</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#526442]/70 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-medium mt-1">Fellesskap</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#526442]/70 px-4 py-2 hover:text-[#9F402D] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-medium mt-1">Omsorg</span>
+</a>
+</nav>
+</body></html>

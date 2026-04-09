@@ -1,0 +1,328 @@
+{
+  "id": "14-dager-momentum",
+  "slug": "14-dager-momentum",
+  "title": {
+    "no": "14 dager med rolig momentum",
+    "en": "14 days of calm momentum"
+  },
+  "description": {
+    "no": "Ett 14-dagers program for aa bygge en vedvarende bevegelsesrutine uten press. Hver dag er kort, overkommelig og skaansom.",
+    "en": "A 14-day program for building a lasting movement routine without pressure."
+  },
+  "targetAudience": {
+    "no": "Deg som onsker aa bygge en bevegelsesrutine uten aa overbelaste deg selv.",
+    "en": "For those who want to build a movement routine without overdoing it."
+  },
+  "duration": "14 dager",
+  "graceAllowed": true,
+  "days": [
+    {
+      "day": 1,
+      "title": {
+        "no": "Dag 1: Kom i gang",
+        "en": "Day 1: Start moving"
+      },
+      "description": {
+        "no": "Dag 1. En rolig start er alt som trengs.",
+        "en": "Day 1. A calm start is all you need."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 6,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 1?",
+        "en": "How did it feel to show up on day 1?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 2,
+      "title": {
+        "no": "Dag 2: Kom i gang",
+        "en": "Day 2: Start moving"
+      },
+      "description": {
+        "no": "Dag 2. En rolig start er alt som trengs.",
+        "en": "Day 2. A calm start is all you need."
+      },
+      "suggestedSessionType": "Puste-strekk",
+      "suggestedMinutes": 7,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 2?",
+        "en": "How did it feel to show up on day 2?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 3,
+      "title": {
+        "no": "Dag 3: Kom i gang",
+        "en": "Day 3: Start moving"
+      },
+      "description": {
+        "no": "Dag 3. En rolig start er alt som trengs.",
+        "en": "Day 3. A calm start is all you need."
+      },
+      "suggestedSessionType": "Dans i stua",
+      "suggestedMinutes": 8,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 3?",
+        "en": "How did it feel to show up on day 3?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 4,
+      "title": {
+        "no": "Dag 4: Hold momentum",
+        "en": "Day 4: Keep momentum"
+      },
+      "description": {
+        "no": "Dag 4. Du har kommet i gang - hold det gaaende.",
+        "en": "Day 4. You have started - keep going."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 9,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 4?",
+        "en": "How did it feel to show up on day 4?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 5,
+      "title": {
+        "no": "Dag 5: Hold momentum",
+        "en": "Day 5: Keep momentum"
+      },
+      "description": {
+        "no": "Dag 5. Du har kommet i gang - hold det gaaende.",
+        "en": "Day 5. You have started - keep going."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 10,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 5?",
+        "en": "How did it feel to show up on day 5?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 6,
+      "title": {
+        "no": "Dag 6: Hold momentum",
+        "en": "Day 6: Keep momentum"
+      },
+      "description": {
+        "no": "Dag 6. Du har kommet i gang - hold det gaaende.",
+        "en": "Day 6. You have started - keep going."
+      },
+      "suggestedSessionType": "Puste-strekk",
+      "suggestedMinutes": 11,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 6?",
+        "en": "How did it feel to show up on day 6?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 7,
+      "title": {
+        "no": "Dag 7: Hold momentum",
+        "en": "Day 7: Keep momentum"
+      },
+      "description": {
+        "no": "Dag 7. Du har kommet i gang - hold det gaaende.",
+        "en": "Day 7. You have started - keep going."
+      },
+      "suggestedSessionType": "Dans i stua",
+      "suggestedMinutes": 12,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 7?",
+        "en": "How did it feel to show up on day 7?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 8,
+      "title": {
+        "no": "Dag 8: Bygg sterke",
+        "en": "Day 8: Build strength"
+      },
+      "description": {
+        "no": "Dag 8. Kroppen tilpasser seg. Fortsett.",
+        "en": "Day 8. Your body is adapting. Continue."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 13,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 8?",
+        "en": "How did it feel to show up on day 8?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 9,
+      "title": {
+        "no": "Dag 9: Bygg sterke",
+        "en": "Day 9: Build strength"
+      },
+      "description": {
+        "no": "Dag 9. Kroppen tilpasser seg. Fortsett.",
+        "en": "Day 9. Your body is adapting. Continue."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 14,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 9?",
+        "en": "How did it feel to show up on day 9?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 10,
+      "title": {
+        "no": "Dag 10: Bygg sterke",
+        "en": "Day 10: Build strength"
+      },
+      "description": {
+        "no": "Dag 10. Kroppen tilpasser seg. Fortsett.",
+        "en": "Day 10. Your body is adapting. Continue."
+      },
+      "suggestedSessionType": "Puste-strekk",
+      "suggestedMinutes": 15,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 10?",
+        "en": "How did it feel to show up on day 10?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 11,
+      "title": {
+        "no": "Dag 11: Bygg sterke",
+        "en": "Day 11: Build strength"
+      },
+      "description": {
+        "no": "Dag 11. Kroppen tilpasser seg. Fortsett.",
+        "en": "Day 11. Your body is adapting. Continue."
+      },
+      "suggestedSessionType": "Dans i stua",
+      "suggestedMinutes": 15,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 11?",
+        "en": "How did it feel to show up on day 11?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 12,
+      "title": {
+        "no": "Dag 12: Feir fremgang",
+        "en": "Day 12: Celebrate progress"
+      },
+      "description": {
+        "no": "Dag 12. Du har bygd en vane. Nyt det.",
+        "en": "Day 12. You have built a habit. Enjoy it."
+      },
+      "suggestedSessionType": "Rolig gatur",
+      "suggestedMinutes": 15,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 12?",
+        "en": "How did it feel to show up on day 12?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 13,
+      "title": {
+        "no": "Dag 13: Feir fremgang",
+        "en": "Day 13: Celebrate progress"
+      },
+      "description": {
+        "no": "Dag 13. Du har bygd en vane. Nyt det.",
+        "en": "Day 13. You have built a habit. Enjoy it."
+      },
+      "suggestedSessionType": "Hjemmebevegelse",
+      "suggestedMinutes": 15,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 13?",
+        "en": "How did it feel to show up on day 13?"
+      },
+      "graceAllowed": true
+    },
+    {
+      "day": 14,
+      "title": {
+        "no": "Dag 14: Feir fremgang",
+        "en": "Day 14: Celebrate progress"
+      },
+      "description": {
+        "no": "Dag 14. Du har bygd en vane. Nyt det.",
+        "en": "Day 14. You have built a habit. Enjoy it."
+      },
+      "suggestedSessionType": "Puste-strekk",
+      "suggestedMinutes": 15,
+      "carePrompt": {
+        "no": "Noe du har gjort for deg selv i dag - selv om det er lite?",
+        "en": "Something you did for yourself today - even if it was small?"
+      },
+      "reflectionQuestion": {
+        "no": "Hvordan kjentes det aa mte opp pa dag 14?",
+        "en": "How did it feel to show up on day 14?"
+      },
+      "graceAllowed": true
+    }
+  ]
+}

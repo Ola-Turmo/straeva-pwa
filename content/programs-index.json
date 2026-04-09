@@ -1,0 +1,20 @@
+[
+  {
+    "id": "14-dager-momentum",
+    "slug": "14-dager-momentum",
+    "title": {
+      "no": "14 dager med rolig momentum",
+      "en": "14 days of calm momentum"
+    },
+    "duration": "14 dager"
+  },
+  {
+    "id": "bedring-etter-utbrenthet",
+    "slug": "bedring-etter-utbrenthet",
+    "title": {
+      "no": "Bedring etter utbrenthet",
+      "en": "Recovery after burnout"
+    },
+    "duration": "21 dager"
+  }
+]

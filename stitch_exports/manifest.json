@@ -1,0 +1,63 @@
+{
+  "project": {
+    "title": "Bevegelse - Straeva",
+    "id": "13208107557847223755"
+  },
+  "screens": [
+    {
+      "title": "Mine Seire - Straeva",
+      "id": "70f48f91d6d745e2b8d61ca6f33ba975",
+      "dir": "mine-seire",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhTgDFdX5oHl5IlqSpUeMAgOR5acVNrNU0eHco2n3RObioY83zvzSeRUEe_Nfg9MoVZgvKavcOadRTunG1Bx7xmS-tPdNM4SFfzsM4944zbMD9aEWKp8hUl_nJnrFlBPWRwppBJ4LknPGNQ83ugCw1p3S79ShHkVqnbf4R1CFD2atqtew1JCSv5FxlWDf7U09JyQzkONciHWxlFkTBVhwfMk2cDAlXN4DSgmlgKTg78aKUWHsEwiiWvecQ",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2UyOGVkNDhjZTllZjQ3MzY4Njg1NjgyNTZjOTMzZWQ4EgsSBxCzpZLPnAsYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzIwODEwNzU1Nzg0NzIyMzc1NQ&filename=&opi=89354086"
+    },
+    {
+      "title": "Feiring - Straeva",
+      "id": "6ae3cc954c3440229f698b5521113373",
+      "dir": "feiring",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujp8m4O2Gp9peVqXnFIFyQRaZ2YJlOgQJVmxpr3_hK8YttQqPLmdLTkvXktIX6rvWowv_-WvhoFjiVLUWL8BhyUdoSr0PmvBsT2oRqvZqqkzVEw5OEWN7gSHy7IybAzbR-KQn0YaERPvdnkglwFAwvooGbxbOKZb8U7WXbnerfeE7g-1agcD5Lu_QUWqtsDezskrqgiCBrDOG4kFbrVyBVR-l0vD5oH7nsdruw53r3LB5b7x1kNpDpE7y8I",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzhhYmUzYTc3Nzg2NTQzYjc5MmIwMTNjNTAzNmI1OWFhEgsSBxCzpZLPnAsYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzIwODEwNzU1Nzg0NzIyMzc1NQ&filename=&opi=89354086"
+    },
+    {
+      "title": "Bevegelse - Straeva",
+      "id": "889596bdae6d4034a933bb196a03b71c",
+      "dir": "bevegelse",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uganJm-MHvD8uuIHVLmuby-vUIrl6EOIiUgM7jnQKSNJ9O0uO1Lw7bMPLqnZwcEdbFHNR5D_ijmNJNUbe8CWfTK6Y2k7jgePLtN8RHP4uBOtnk6es5khXi-3_oCMK_fhLqnccCLOVowVcPmbaZw8sYQ9ZIPe494y8ll6mCWYUrDyDuzeCXHkG7bB3yxDQaCF4Hzmzsy2xPLnw3nAcWLWAzTtbmSDDWyyupully1oOaJ3_YAmcIChaUSvuc-",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2U4NDc0OWYwNDYxMTQ0MWY4MGE5Yjc1NjA0YmU3NThmEgsSBxCzpZLPnAsYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzIwODEwNzU1Nzg0NzIyMzc1NQ&filename=&opi=89354086"
+    },
+    {
+      "title": "Hjem - Straeva",
+      "id": "89f667d66b1544a19199ba9b1132b668",
+      "dir": "hjem",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiVmcyux0nV6XsGSdy1i95aVU944W2uOnvKJbSAdlj3hjrSscIiEv8WKcUP0IzWLyxJJAdRL5Bam3HnZtABPzF84hSV-pL44WYyZR1n4uNS6Mw-29W8hKQKwsMbZKjj_1OuS5rN3ovJONk2UDthNlgzW1dYJ81kvAd0IhImdD90A8YPkTVzVHmWFeBbD2FfJlNPp80_9OVjtuGDTvHm1X5xsYuGDGmYCDILOztZTLFnmIHHu6mwSPqhOk8",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzQwNTY2MmFhY2U2YTRiNzc4ZmZhNzU2MmFjZjRkNDk0EgsSBxCzpZLPnAsYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzIwODEwNzU1Nzg0NzIyMzc1NQ&filename=&opi=89354086"
+    },
+    {
+      "title": "Mine Seire (Omsorg) - Straeva",
+      "id": "258c30311e8649ae952017f7e75a7f5c",
+      "dir": "mine-seire-omsorg",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhnfJs7nieXa9NPYWx4IamOh3d_b64zB-IReFD26D_J7es1sh56lNFQGheufZIZlSrH-_ut4gq4qhuUJN1X_0ST5myksdHWNoEebnmsX-XavtPveljO07XSO1aHWQxb4B4qlxJiG3AtFAesLazGuJMP-xoOpzYhYm2DmdcpYRmfAeUpxpmCjkiMotOcouXtUt095WmutQSXDZG6kBKHYrP-CQPx2E6V5KvaUc0YtfRR8-fXdpVjFPTkUFMK",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAyOGViOTVlOTA3MzQ2MGI5YjBhY2RhNDY4NzhjMmY0EgsSBxCzpZLPnAsYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzIwODEwNzU1Nzg0NzIyMzc1NQ&filename=&opi=89354086"
+    },
+    {
+      "title": "Omsorg & Hverdag - Straeva",
+      "id": "e0253e532aee427987e00ee1e35ab224",
+      "dir": "omsorg-hverdag",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugOgksdKykRtN5UUPx4F-9b-Ck12pLImHrYZ3KZ9hkrPGwbZUCLLf4IwfgaOPGcXQGFhpqprIOV-WBnfxbeRpk5fmEfIlRC6-FZm2CMhZbU7FOLN4KlwI9T-9Bf70ilz9TocdLJ4JxryXuYSJF2F8jaNTh6GjecL679E6guaiVcis5nLlqjcuMaduWN-HFJI2krpLU00S6V1TGrTTA8ISsJ2Ug2hapPpqAeImMMGdWC2kr2p8PpljNI3vA",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzYxNDNhYmMwYTFhZTQwZjg5OGI4ZjM5MTEwOGMzOTFmEgsSBxCzpZLPnAsYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzIwODEwNzU1Nzg0NzIyMzc1NQ&filename=&opi=89354086"
+    },
+    {
+      "title": "Feiring av Omsorg - Straeva",
+      "id": "17bd8d9b68804be7be094df4f2715d81",
+      "dir": "feiring-av-omsorg",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugLqDyPWu6OnNMr21ZdZFfj5YxyNr5NkWJU5T9d-x0lS_PlD_B740TfOF8gdMgDjJe_kOxfSSfbSXh4u3hH097Adasoizs8rdZW_Q3IqcaOSdoob5zBTZBA4lUyo9yiIuflyNpDJVUOz8Nl-53j10ZvzRzNPAdTeABCNjqMQ7iKZfSXPM-K-byYoclQDMVD5pg73Ymbzx2E5STZC4kBn3srZmz_LHkrAHqrCpDilEVCSXAwm_07rnrybqA",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzlkYzljNzAyZGI3YTQwNDZiMDQ2ZTBhMDQ4MzY5MzFhEgsSBxCzpZLPnAsYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzIwODEwNzU1Nzg0NzIyMzc1NQ&filename=&opi=89354086"
+    }
+  ],
+  "designSystem": {
+    "id": "asset-stub-assets-5f168370dc8f4815be5ec27606afc63c-1774811342640",
+    "assetId": "assets/5f168370dc8f4815be5ec27606afc63c",
+    "displayName": "Kindred Earth",
+    "note": "Stitch MCP exposes design-system data but not a separate hosted screenshot/code export for the asset-stub tile. Saved rendered screenshot plus MCP theme payload locally."
+  }
+}

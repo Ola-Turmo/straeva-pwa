@@ -1,0 +1,35 @@
+{
+  "name": "Stræva",
+  "short_name": "Stræva",
+  "description": "Et varmt PWA for bevegelse, omsorg og små seire. Alt lagres lokalt på enheten din.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#fbfbe2",
+  "theme_color": "#fbfbe2",
+  "lang": "no",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/stitch_exports/hjem/screen.png",
+      "sizes": "780x2740",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Hjem"
+    },
+    {
+      "src": "/stitch_exports/feiring-av-omsorg/screen.png",
+      "sizes": "868x2600",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Feiring av omsorg"
+    }
+  ]
+}
